@@ -1,7 +1,7 @@
 export class UsersTransformer {
-  static toResponse(user) {
+  static toResponse(document) {
     const { _id, email, password, firstName, lastName, createdAt, updatedAt } =
-      user;
+      document;
     return {
       id: _id,
       email,
